@@ -1,0 +1,53 @@
+$primary-bg: #A4C8E1;
+$header-bg: #D17F32;
+$day-bg: #FEFEFC;
+$day-text: #404040;
+$event-bg: #1E4170;
+$hover-bg: #bd6262;
+$hover-text: rgb(183, 51, 51);
+$border-color: #222529;
+
+.calendar {
+    background-color: $primary-bg;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    &-header {
+        background-color: $header-bg;
+        color: #FEFEFC;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: lighten($header-bg, 10%);
+        }
+    }
+
+    &-day {
+        background-color: $day-bg;
+        color: $day-text;
+        padding: 10px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        margin: 5px;
+        text-align: center;
+        transition: transform 0.2s;
+
+        &:hover {
+            background-color: $hover-bg;
+            color: $hover-text;
+            transform: scale(1.05);
+        }
+    }
+
+    &-event {
+        background-color: $event-bg;
+        color: #FEFEFC;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+}
