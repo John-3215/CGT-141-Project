@@ -2,15 +2,26 @@
     position: relative; /* Ensure the container is positioned */
 }
 
+.background-image {
+    width: 100%;
+    height: 300px;
+    filter: brightness(0.3) blur(4px);
+    object-fit: cover; /* Ensures the image covers the entire container without stretching */
+}
+
 .text-overlay {
     position: absolute;
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust the position to truly center */
-    color: black; /* Change text color for visibility */
-    text-align: center; /* Center text */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
+    color: white; /* Make text white */
+    text-align: center;
     z-index: 10; /* Ensure it overlays above the image */
-    padding: 20px; /* Optional: Add some padding */
-    border-radius: 8px; /* Optional: Round corners */
 }
 
 .jazz-title {
@@ -26,40 +37,106 @@
     padding: 0 15%;
 }
 
+/* Month Button Styles with Images */
+.btn-august {
+    background-image: url('/path/to/august-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-august:hover {
+    /* No background color change on hover */
+    background-image: url('/path/to/august-image.jpg'); /* Keeps the same image on hover */
+}
 
-/* Month Button Styles with Hover Effects */
-.btn-august { background-color: #FFA726; color: white; }
-.btn-august:hover { background-color: #FB8C00; }
+.btn-september {
+    background-image: url('/path/to/september-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-september:hover {
+    background-image: url('/path/to/september-image.jpg');
+}
 
-.btn-september { background-color: #66BB6A; color: white; }
-.btn-september:hover { background-color: #43A047; }
+.btn-october {
+    background-image: url('/path/to/october-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-october:hover {
+    background-image: url('/path/to/october-image.jpg');
+}
 
-.btn-october { background-color: #FF7043; color: white; }
-.btn-october:hover { background-color: #F4511E; }
+.btn-november {
+    background-image: url('/path/to/november-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-november:hover {
+    background-image: url('/path/to/november-image.jpg');
+}
 
-.btn-november { background-color: #8D6E63; color: white; }
-.btn-november:hover { background-color: #6D4C41; }
+.btn-december {
+    background-image: url('/path/to/december-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-december:hover {
+    background-image: url('/path/to/december-image.jpg');
+}
 
-.btn-december { background-color: #42A5F5; color: white; }
-.btn-december:hover { background-color: #1E88E5; }
+.btn-january {
+    background-image: url('/path/to/january-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-january:hover {
+    background-image: url('/path/to/january-image.jpg');
+}
 
-.btn-january { background-color: #2196F3; color: white; }
-.btn-january:hover { background-color: #1976D2; }
+.btn-february {
+    background-image: url('/path/to/february-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-february:hover {
+    background-image: url('/path/to/february-image.jpg');
+}
 
-.btn-february { background-color: #EC407A; color: white; }
-.btn-february:hover { background-color: #D81B60; }
+.btn-march {
+    background-image: url('/path/to/march-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-march:hover {
+    background-image: url('/path/to/march-image.jpg');
+}
 
-.btn-march { background-color: #66BB6A; color: white; }
-.btn-march:hover { background-color: #43A047; }
+.btn-april {
+    background-image: url('/path/to/april-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-april:hover {
+    background-image: url('/path/to/april-image.jpg');
+}
 
-.btn-april { background-color: #AB47BC; color: white; }
-.btn-april:hover { background-color: #8E24AA; }
+.btn-may {
+    background-image: url('/path/to/may-image.jpg');
+    background-size: cover;
+    color: black;
+}
+.btn-may:hover {
+    background-image: url('/path/to/may-image.jpg');
+}
 
-.btn-may { background-color: #FFEE58; color: black; }
-.btn-may:hover { background-color: #FDD835; }
-
-.btn-june { background-color: #29B6F6; color: white; }
-.btn-june:hover { background-color: #0288D1; }
+.btn-june {
+    background-image: url('/path/to/june-image.jpg');
+    background-size: cover;
+    color: white;
+}
+.btn-june:hover {
+    background-image: url('/path/to/june-image.jpg');
+}
 
 .custom-btn {
     border: 3px solid black !important;
@@ -76,7 +153,16 @@
 
 /* Outline (Text Shadow) Effect */
 button span {
-    font-size: 36px; /* This keeps the font size consistent */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Optional: Keep your text shadow if desired */
+    color: white; /* Set text color to white */
+    font-size: 36px; /* Keeps the font size consistent */
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+        -2px  0px 0 #000,
+         2px  0px 0 #000,
+         0px -2px 0 #000,
+         0px  2px 0 #000; /* Thicker black outline */
 }
 
