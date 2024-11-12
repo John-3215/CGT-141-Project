@@ -137,7 +137,7 @@
 }
 
 .custom-btn {
-    border: 5px solid #222529 !important;
+    border: 3px solid black !important;
     border-radius: 5% !important;
     transition: background-color 0.3s ease-in-out;
     display: flex;
@@ -150,6 +150,7 @@
     width: 100%;
 }
 
+/* Outline (Text Shadow) Effect */
 button span {
     color: white; /* Set text color to white */
     font-size: 36px; /* Keeps the font size consistent */
@@ -164,19 +165,3 @@ button span {
          0px  2px 0 #000; /* Thicker black outline */
 }
 
-.footer-bottom {
-    border-top: 2px solid #ccc; /* Add a top border with your preferred color and thickness */
-    padding-top: 10px; /* Optional: add padding for spacing */
-    padding-bottom: 10px;
-    text-align: center;
-    background-color: #333; /* Adjust background color if needed */
-    color: white;
-    font-size: 14px;
-}
-
-.footer-container .col-lg-4, .footer-container .col-md-6 {
-    border: 5px solid #222529; /* Adds a border around each section */
-    border-radius: 8px; /* Optional: rounds the corners */
-    padding: 20px; /* Adds padding inside the border */
-    margin-bottom: 20px; /* Adds space below each section */
-}

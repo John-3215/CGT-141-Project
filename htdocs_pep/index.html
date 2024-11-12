@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#">Performances</a>
             </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Rehersals</a>
+                <a class="nav-link" href="#">Rehearsals</a>
             </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">QNA</a>
@@ -42,22 +42,279 @@
 </nav>        
 <body>
 
-<!--Mission-->
-<div class="container mt-5 ">
-    <div class="row align-items-start mb-3 position-relative ">
-        <div class="bg-raider-mission position-relative ">
-            <img src="/htdocs_main/Images/sheetmusic.jpg" style="width: 100%; height: 300px; filter: brightness(0.3) blur(4px);" alt="Sheet Music">
-            <div class="text-overlay">
-                <h2 class="fs-1 fw-bolder text-capitalize text-center" style="padding: 0%;">Mission</h2>
-                <p class="fs-7 text-center" style="padding: 0% 15% 0% 15%;">The mission of the Harrison Band Program is to provide students a high quality Performing Arts experience based on recognized standards for Music Education while practicing important workplace skills in a safe, supportive and encouraging environment.</p>
+<!--Jazz Band-->
+<div class="bg-raider-mission position-relative">
+    <img src="/htdocs_main/Images/Jazz_concert.png" class="background-image" alt="Sheet Music">
+    <div class="text-overlay">
+        <h2 class="jazz-title">Jazz Band 24-25</h2>
+        <p class="jazz-description">Extra Curricular Jazz Band is a beginning/intermediate level Jazz Band that is open to all currently enrolled band members who play saxophone, trumpet, trombone, piano, bass, or drums and meet the Director’s standards concerning attitude and participation. The band rehearses once a week during 2nd and 3rd quarters and performs two concerts a year. Watch this space for more info in Mid October.</p>
+    </div>
+</div>
+
+<!-- Month Buttons -->
+<div class="container my-4">
+    <div class="row mb-2 justify-content-center">
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-august custom-btn w-100" data-bs-toggle="modal" data-bs-target="#augustModal"><span>August</span></button>
+        </div>
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-september custom-btn w-100" data-bs-toggle="modal" data-bs-target="#septemberModal"><span>September</span></button>
+        </div>
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-october custom-btn w-100" data-bs-toggle="modal" data-bs-target="#octoberModal"><span>October</span></button>
+        </div>
+    </div>
+    <div class="row mb-2 justify-content-center">
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-november custom-btn w-100" data-bs-toggle="modal" data-bs-target="#novemberModal"><span>November</span></button>
+        </div>
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-december custom-btn w-100" data-bs-toggle="modal" data-bs-target="#decemberModal"><span>December</span></button>
+        </div>
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-january custom-btn w-100" data-bs-toggle="modal" data-bs-target="#januaryModal"><span>January</span></button>
+        </div>
+    </div>
+    <div class="row mb-2 justify-content-center">
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-february custom-btn w-100" data-bs-toggle="modal" data-bs-target="#februaryModal"><span>February</span></button>
+        </div>
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-march custom-btn w-100" data-bs-toggle="modal" data-bs-target="#marchModal"><span>March</span></button>
+        </div>
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-april custom-btn w-100" data-bs-toggle="modal" data-bs-target="#aprilModal"><span>April</span></button>
+        </div>
+    </div>
+    <div class="row mb-2 justify-content-center">
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-may custom-btn w-100" data-bs-toggle="modal" data-bs-target="#mayModal"><span>May</span></button>
+        </div>
+        <div class="col-4 col-md-3">
+            <button type="button" class="btn btn-june custom-btn w-100" data-bs-toggle="modal" data-bs-target="#juneModal"><span>June</span></button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for August -->
+<div class="modal fade" id="augustModal" tabindex="-1" aria-labelledby="augustModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="augustModalLabel">August 2024 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in August 2024.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#juneModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#septemberModal" data-bs-toggle="modal">Next</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Calendar -->
- 
+<!-- Modal for September -->
+<div class="modal fade" id="septemberModal" tabindex="-1" aria-labelledby="septemberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="septemberModalLabel">September 2024 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in September 2024.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#augustModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#octoberModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Modal for October -->
+<div class="modal fade" id="octoberModal" tabindex="-1" aria-labelledby="octoberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="octoberModalLabel">October 2024 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in October 2024.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#septemberModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#novemberModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for November -->
+<div class="modal fade" id="novemberModal" tabindex="-1" aria-labelledby="novemberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="novemberModalLabel">November 2024 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in November 2024.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#octoberModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#decemberModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for December -->
+<div class="modal fade" id="decemberModal" tabindex="-1" aria-labelledby="decemberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="decemberModalLabel">December 2024 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in December 2024.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#novemberModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#januaryModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for January -->
+<div class="modal fade" id="januaryModal" tabindex="-1" aria-labelledby="januaryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="januaryModalLabel">January 2025 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in January 2025.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#decemberModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#februaryModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for February -->
+<div class="modal fade" id="februaryModal" tabindex="-1" aria-labelledby="februaryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="februaryModalLabel">February 2025 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in February 2025.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#januaryModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#marchModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for March -->
+<div class="modal fade" id="marchModal" tabindex="-1" aria-labelledby="marchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="marchModalLabel">March 2025 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in March 2025.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#februaryModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#aprilModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for April -->
+<div class="modal fade" id="aprilModal" tabindex="-1" aria-labelledby="aprilModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="aprilModalLabel">April 2025 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in April 2025.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#marchModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#mayModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for May -->
+<div class="modal fade" id="mayModal" tabindex="-1" aria-labelledby="mayModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mayModalLabel">May 2025 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in May 2025.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#aprilModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#juneModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for June -->
+<div class="modal fade" id="juneModal" tabindex="-1" aria-labelledby="juneModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="juneModalLabel">June 2025 Events</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Details about events or performances happening in June 2025.</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Previous and Next Buttons -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#mayModal" data-bs-toggle="modal">Previous</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="#augustModal" data-bs-toggle="modal">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer id="footer">
@@ -98,5 +355,9 @@
 
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script></body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
+
