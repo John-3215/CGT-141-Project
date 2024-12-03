@@ -104,54 +104,32 @@ button span {
     text-shadow: none; /* Removes the outline effect */
 }
 
-/* Add outline around each footer section */
-#footer .col-lg-4, 
-#footer .col-md-6, 
-#footer .col-md-12 {
-    border: 2px solid black; /* Black border for outline */
-    padding: 15px; /* Add spacing inside each section */
-    border-radius: 8px; /* Optional: round the corners */
-    background-color: rgba(0, 0, 0, 0.1); /* Optional: light background for contrast */
-}
-
-/* Add spacing between sections */
-#footer .row > div {
-    margin-bottom: 20px; /* Space between rows on smaller screens */
-}
-
-#footer h5 {
-    text-transform: uppercase;
+.card_h-footer {
+    background-color: #f8f9fa;
+    text-align: center;
     font-weight: bold;
-    text-align: center; /* Center-align section titles */
-    margin-bottom: 10px;
-}
-
-/* Optional hover effect */
-#footer .col-lg-4:hover, 
-#footer .col-md-6:hover, 
-#footer .col-md-12:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
-    background-color: rgba(255, 255, 255, 0.8); /* Lightens background on hover */
-}
-
-/* Make text in Quick Links section black */
-#footer .col-lg-4:nth-child(2) ul li a {
-    color: black; /* Change text color to black */
-    text-decoration: none; /* Remove underlines */
-}
-
-#footer .col-lg-4:nth-child(2) ul li a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-}
-
-/* Make icons in Follow Us section black */
-#footer .col-lg-4:nth-child(3) a {
-    color: black; /* Change icon color to black */
-}
-
-#footer .col-lg-4:nth-child(3) a:hover {
-    color: #555; /* Optional: Change icon color on hover */
-}
+  }
+  
+  footer {
+    width: 100%; /* Ensures the footer takes the full width */
+    background-color: #333; /* Ensure it has a consistent background color */
+    color: white;
+    padding: 20px 0; /* Add some vertical padding for spacing */
+    border-top: 2px solid var(--primary-color); /* Optional border for a neat touch */
+    position: relative;
+    bottom: 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Optional: Center the content with a max-width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .footer-bottom {
+    background-color: #444; /* Darker background for the copyright bar */
+    padding: 10px;
+    text-align: center;
+  }
 
 /* Ensure the parent container is relative */
 .button-container {
@@ -300,3 +278,24 @@ button span {
     position: relative; /* Ensure absolute positioning works inside the container */
     padding-bottom: 100px; /* Adjust to make room for images */
 }
+
+footer {
+    width: 100%; /* Ensures the footer takes the full width */
+    background-color: #333; /* Ensure it has a consistent background color */
+    color: white;
+    padding: 20px 0; /* Add some vertical padding for spacing */
+    border-top: 2px solid var(--primary-color); /* Optional border for a neat touch */
+    position: relative;
+    bottom: 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Optional: Center the content with a max-width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .footer-bottom {
+    background-color: #444; /* Darker background for the copyright bar */
+    padding: 10px;
+    text-align: center;
+  }
