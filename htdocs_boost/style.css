@@ -1,1 +1,26 @@
-
+.card_h-footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+footer {
+    width: 100%; /* Ensures the footer takes the full width */
+    background-color: #333; /* Ensure it has a consistent background color */
+    color: white;
+    padding: 20px 0; /* Add some vertical padding for spacing */
+    border-top: 2px solid var(--primary-color); /* Optional border for a neat touch */
+    position: relative;
+    bottom: 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Optional: Center the content with a max-width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .footer-bottom {
+    background-color: #444; /* Darker background for the copyright bar */
+    padding: 10px;
+    text-align: center;
+  }
