@@ -1,5 +1,6 @@
+/* Optional: Adjust the background and overlay if needed */
 .bg-raider-mission {
-    position: relative; /* Ensure the container is positioned */
+    position: relative;
 }
 
 .background-image {
@@ -37,104 +38,50 @@
     padding: 0 15%;
 }
 
-.btn-august {
-    background-image: url('htdocs_main\Images\Jazz_sax.png');
-    background-size: cover;
-    color: white;
-}
-.btn-august:hover {
-    background-image: url('/path/to/august-image.jpg'); /* Keeps the same image on hover */
+/* Hide the images by default */
+.btn .img-fluid {
+    display: none;
 }
 
-.btn-september {
-    background-image: url('/path/to/september-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-september:hover {
-    background-image: url('/path/to/september-image.jpg');
-}
-
-.btn-october {
-    background-image: url('/path/to/october-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-october:hover {
-    background-image: url('/path/to/october-image.jpg');
+/* Show the image when hovering over the button */
+.btn-august:hover .img-august,
+.btn-september:hover .img-september,
+.btn-october:hover .img-october .img-november,
+.img-december .img-january .img-february .img-march,
+.img-april .img-may .img-june {
+    display: block;
 }
 
-.btn-november {
-    background-image: url('/path/to/november-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-november:hover {
-    background-image: url('/path/to/november-image.jpg');
+/* Optionally, style the images */
+.btn img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    transition: opacity 0.3s ease; /* Optional fade-in effect */
 }
 
-.btn-december {
-    background-image: url('/path/to/december-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-december:hover {
-    background-image: url('/path/to/december-image.jpg');
+/* Hide the image for months that are not hovered */
+.btn img {
+    opacity: 0;
 }
 
-.btn-january {
-    background-image: url('/path/to/january-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-january:hover {
-    background-image: url('/path/to/january-image.jpg');
+/* Show image with opacity when hovered */
+.btn:hover img {
+    opacity: 1;
 }
 
-.btn-february {
-    background-image: url('/path/to/february-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-february:hover {
-    background-image: url('/path/to/february-image.jpg');
-}
-
-.btn-march {
-    background-image: url('/path/to/march-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-march:hover {
-    background-image: url('/path/to/march-image.jpg');
+@media (max-width: 768px) {
+    .custom-btn {
+        font-size: 24px;
+        height: 150px;
+    }
+    .jazz-title {
+        font-size: 2rem;
+    }
+    .jazz-description {
+        padding: 0 10%;
+    }
 }
 
-.btn-april {
-    background-image: url('/path/to/april-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-april:hover {
-    background-image: url('/path/to/april-image.jpg');
-}
-
-.btn-may {
-    background-image: url('/path/to/may-image.jpg');
-    background-size: cover;
-    color: black;
-}
-.btn-may:hover {
-    background-image: url('/path/to/may-image.jpg');
-}
-
-.btn-june {
-    background-image: url('/path/to/june-image.jpg');
-    background-size: cover;
-    color: white;
-}
-.btn-june:hover {
-    background-image: url('/path/to/june-image.jpg');
-}
 
 .custom-btn {
     border: 3px solid black !important;
@@ -150,18 +97,206 @@
     width: 100%;
 }
 
-/* Outline (Text Shadow) Effect */
+/* Updated Month Text Style */
 button span {
-    color: white; /* Set text color to white */
+    color: black; /* Set text color to black */
     font-size: 36px; /* Keeps the font size consistent */
-    text-shadow: 
-        -2px -2px 0 #000,  
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000,
-        -2px  0px 0 #000,
-         2px  0px 0 #000,
-         0px -2px 0 #000,
-         0px  2px 0 #000; /* Thicker black outline */
+    text-shadow: none; /* Removes the outline effect */
 }
 
+/* Add outline around each footer section */
+#footer .col-lg-4, 
+#footer .col-md-6, 
+#footer .col-md-12 {
+    border: 2px solid black; /* Black border for outline */
+    padding: 15px; /* Add spacing inside each section */
+    border-radius: 8px; /* Optional: round the corners */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: light background for contrast */
+}
+
+/* Add spacing between sections */
+#footer .row > div {
+    margin-bottom: 20px; /* Space between rows on smaller screens */
+}
+
+#footer h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center; /* Center-align section titles */
+    margin-bottom: 10px;
+}
+
+/* Optional hover effect */
+#footer .col-lg-4:hover, 
+#footer .col-md-6:hover, 
+#footer .col-md-12:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+    background-color: rgba(255, 255, 255, 0.8); /* Lightens background on hover */
+}
+
+/* Make text in Quick Links section black */
+#footer .col-lg-4:nth-child(2) ul li a {
+    color: black; /* Change text color to black */
+    text-decoration: none; /* Remove underlines */
+}
+
+#footer .col-lg-4:nth-child(2) ul li a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+/* Make icons in Follow Us section black */
+#footer .col-lg-4:nth-child(3) a {
+    color: black; /* Change icon color to black */
+}
+
+#footer .col-lg-4:nth-child(3) a:hover {
+    color: #555; /* Optional: Change icon color on hover */
+}
+
+/* Ensure the parent container is relative */
+.button-container {
+    position: relative; /* Ensures absolute positioning of the image under the button */
+    display: inline-block; /* Keep the button and image together */
+    margin-bottom: 20px; /* Space between buttons in rows */
+}
+
+/* Style for the month buttons */
+.button-container .btn {
+    position: relative; /* Ensures the button sits above the image */
+    z-index: 1; /* Higher z-index to overlay above the image */
+    background-color: white; /* Default button background */
+    border: 3px solid black;
+    border-radius: 5%;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Button background color change */
+}
+
+/* Style for the images under the buttons */
+.button-container img {
+    position: absolute; /* Positioned relative to the button container */
+    top: 100%; /* Places image directly below the button */
+    left: 50%; /* Centers the image horizontally */
+    transform: translateX(-50%); /* Corrects centering */
+    z-index: 0; /* Keeps image below the button */
+    width: 150px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0; /* Initially hide the image */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth reveal effect */
+}
+
+/* Hover effect to reveal the image */
+.button-container:hover img {
+    opacity: 1; /* Show the image */
+    transform: translateX(-50%) translateY(-10px); /* Slight upward movement */
+}
+
+.button-container:hover .btn {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken button background */
+    color: white; /* Change text color */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .button-container img {
+        width: 80%; /* Smaller image for smaller screens */
+    }
+    .btn {
+        font-size: 18px; /* Smaller button text */
+        padding: 10px 20px;
+    }
+}
+
+/* Ensure the col div is a relative container */
+.position-relative {
+    position: relative;
+}
+
+/* Style for the images under the buttons */
+.hover-image {
+    position: absolute; /* Positioned relative to the col container */
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    width: 100%; /* Cover the entire width of the button */
+    height: 100%; /* Match the height of the button */
+    object-fit: cover; /* Ensure image scales without distortion */
+    z-index: 0; /* Place image behind the button */
+    opacity: 0; /* Hide the image initially */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth fade-in and zoom effect */
+}
+
+/* Style for the buttons */
+.custom-btn {
+    position: relative; /* Ensure buttons sit above images */
+    z-index: 1; /* Higher z-index to overlay buttons above images */
+    background-color: white; /* Default button background */
+    border: 3px solid black;
+    border-radius: 5%;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for buttons to reveal images */
+.position-relative:hover .hover-image {
+    opacity: 1; /* Make the image visible */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.position-relative:hover .custom-btn {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken button on hover */
+    color: white; /* Change button text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-btn {
+        font-size: 18px; /* Adjust button font size */
+        padding: 10px 20px;
+    }
+    .hover-image {
+        object-fit: contain; /* Adjust fit for smaller screens */
+    }
+}
+
+/* Side images */
+.side-image {
+    position: absolute;
+    top: 50%; /* Center the images vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    z-index: 1; /* Ensure the images appear beneath other content */
+    width: 20vw; /* Make the width relative to the viewport width */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+/* Position Jazz Sax on the left with padding */
+.side-image.left {
+    left: 5%; /* Position it 5% from the left edge */
+    padding-right: 10%; /* Adds padding between the left image and the months container */
+}
+
+/* Position Jazz Trumpet on the right with padding */
+.side-image.right {
+    right: 5%; /* Position it 5% from the right edge */
+    padding-left: 10%; /* Adds padding between the right image and the months container */
+}
+
+/* Adjust the months container for padding */
+.months-container {
+    margin-left: 15%; /* Adds space between the left image and the months container */
+    margin-right: 15%; /* Adds space between the right image and the months container */
+}
+
+/* Adjust the page container to avoid overlap with footer */
+.page-container {
+    position: relative; /* Ensure absolute positioning works inside the container */
+    padding-bottom: 100px; /* Adjust to make room for images */
+}
