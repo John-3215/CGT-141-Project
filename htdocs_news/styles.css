@@ -58,3 +58,8 @@
 .logo{
     max-height: 80%;
 }
+.class{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    margin: .5rem;
+}
