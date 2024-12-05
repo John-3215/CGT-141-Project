@@ -143,7 +143,7 @@ button span {
     position: relative; /* Ensures the button sits above the image */
     z-index: 1; /* Higher z-index to overlay above the image */
     background-color: white; /* Default button background */
-    border: 3px solid black;
+    border: 3px solid #333;
     border-radius: 5%;
     font-size: 24px;
     font-weight: bold;
@@ -173,7 +173,7 @@ button span {
 }
 
 .button-container:hover .btn {
-    background-color: rgba(0, 0, 0, 0.8); /* Darken button background */
+    background-color: #333; /* Darken button background */
     color: white; /* Change text color */
 }
 
@@ -212,7 +212,7 @@ button span {
     position: relative; /* Ensure buttons sit above images */
     z-index: 1; /* Higher z-index to overlay buttons above images */
     background-color: white; /* Default button background */
-    border: 3px solid black;
+    border: 3px solid #333;
     border-radius: 5%;
     font-size: 24px;
     font-weight: bold;
@@ -229,7 +229,7 @@ button span {
 }
 
 .position-relative:hover .custom-btn {
-    background-color: rgba(0, 0, 0, 0.8); /* Darken button on hover */
+    background-color: #333; /* Darken button on hover */
     color: white; /* Change button text color */
 }
 
