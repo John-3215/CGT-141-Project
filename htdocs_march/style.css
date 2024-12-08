@@ -5,7 +5,7 @@
 }
 
 footer {
-  width: 100px; /* Ensures the footer takes the full width */
+  width: 100%; /* Ensures the footer takes the full width */
   background-color: #333; /* Ensure it has a consistent background color */
   color: white;
   padding: 20px 0; /* Add some vertical padding for spacing */
@@ -14,9 +14,10 @@ footer {
   bottom: 0;
 }
 
-.footer-container {
-  max-width: 1200px; /* Optional: Center the content with a max-width */
-  margin: 0 auto; /* Center the container horizontally */
+.footer-fullwidth {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-bottom {
